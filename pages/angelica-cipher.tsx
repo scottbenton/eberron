@@ -58,7 +58,6 @@ const alphabetCipher: cipher = {
   p: "z",
 };
 
-const alphabetString = Object.keys(alphabetCipher).join("");
 const cipherString = Object.values(alphabetCipher).join("");
 
 const angelicasLog =
@@ -73,10 +72,6 @@ const AngelicaCypher: React.FC = (props) => {
     let output = [];
     for (let i = 0; i < angelicasLog.length; i++) {
       const currentChar = angelicasLog[i];
-      // if (i === 0 || angelicasLog[i - 1] !== "\\") {
-      //   console.debug(i === 0);
-      //   console.debug(angelicasLog[i - 1]);
-      // }
 
       if (
         alphabetRE.test(currentChar) &&
@@ -84,7 +79,6 @@ const AngelicaCypher: React.FC = (props) => {
       ) {
         output.push(currentCipher[currentChar.toLowerCase()] ?? "_");
       } else {
-        // console.debug(currentChar);
         output.push(currentChar);
       }
     }
@@ -96,7 +90,6 @@ const AngelicaCypher: React.FC = (props) => {
       let newAlphabet = { ...prevAlphabet };
 
       let newChar = value.replace(/[^a-z]/gi, "").slice(-1);
-      console.debug(key, newChar);
       newAlphabet[key] = newChar ? newChar.toLowerCase() : undefined;
 
       if (Object.values(newAlphabet).join("") === cipherString) {
@@ -104,7 +97,6 @@ const AngelicaCypher: React.FC = (props) => {
       } else {
         setCorrectSolution(false);
       }
-      console.debug(newAlphabet);
 
       return newAlphabet;
     });
