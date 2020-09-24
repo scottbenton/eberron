@@ -44,8 +44,8 @@ export const Header: React.FC = (props) => {
                 className={clsx(
                   "h-full flex items-center px-4 py-5 fill-current focus:outline-none  box-border rounded-b-md",
                   path === router.pathname
-                    ? "text-white bg-blue-600 hover:bg-blue-800"
-                    : " text-gray-700 hover:bg-blue-200"
+                    ? "text-white bg-blue-600 hover:bg-blue-700"
+                    : " text-gray-700 hover:bg-blue-300"
                 )}
               >
                 <Icon className={"w-6"} />
