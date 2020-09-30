@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Chronicle: React.FC = () => {
   return (
-    <div className={"flex flex-col p-4 mx-auto max-w-xl w-full"}>
-      <h1 className={"text-center text-4xl font-semibold font-newspaper"}>
+    <div className={"flex flex-col py-4 mx-auto max-w-xl w-full"}>
+      <h1 className={"text-center text-4xl font-semibold font-newspaper px-4"}>
         Korranberg Chronicle
       </h1>
       <h2
         className={
-          "font-newspaper mt-6  mb-2 uppercase font-semibold tracking-wider"
+          "font-newspaper mt-6  mb-2 uppercase font-semibold tracking-wider px-4"
         }
       >
         Articles
@@ -18,7 +18,11 @@ const Chronicle: React.FC = () => {
         <>
           <hr />
           <Link href={"/chronicle/" + entry.meta.url} key={index}>
-            <a className={"w-full py-2 flex flex-col hover:bg-smoke-lightest"}>
+            <a
+              className={
+                "w-full py-2 flex flex-col hover:bg-smoke-lightest px-4"
+              }
+            >
               <span className={"font-newspaper text-xl font-semibold"}>
                 {entry.meta.title}
               </span>

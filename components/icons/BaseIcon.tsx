@@ -1,5 +1,5 @@
 export interface BaseIconProps {
-  className: string;
+  className?: string;
 }
 
 export const BaseIcon: React.FC<BaseIconProps> = (props) => {

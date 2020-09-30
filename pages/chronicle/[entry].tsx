@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import { chronicleEntries } from "@/content/chronicle";
+import Link from "next/link";
 
 const ChronicleEntry: React.FC = (props) => {
   const router = useRouter();
   const { entry } = router.query;
 
-  const currentEntry = chronicleEntries.find((e) => e.meta.url === entry);
+  const entryIndex = chronicleEntries.findIndex((e) => e.meta.url === entry);
+  const currentEntry = chronicleEntries[entryIndex];
   if (!currentEntry) {
     return null;
   }
@@ -22,6 +24,30 @@ const ChronicleEntry: React.FC = (props) => {
         </span>
         <hr />
         {currentEntry?.content}
+      </div>
+      <div className={"w-full max-w-xl mx-auto flex justify-between py-4"}>
+        <div>
+          {entryIndex - 1 > 0 && (
+            <Link
+              href={`/chronicle/${chronicleEntries[entryIndex - 1].meta.url}`}
+            >
+              <a className={"underline text-blue-600 hover:text-blue-800"}>
+                Previous Article
+              </a>
+            </Link>
+          )}
+        </div>
+        <div>
+          {entryIndex + 1 < chronicleEntries.length && (
+            <Link
+              href={`/chronicle/${chronicleEntries[entryIndex + 1].meta.url}`}
+            >
+              <a className={"underline text-blue-600 hover:text-blue-800"}>
+                Next Article
+              </a>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
