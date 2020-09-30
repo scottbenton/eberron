@@ -44,6 +44,16 @@ const Home: React.FC = () => {
           to you online, you can get a better feel as to what is going on in the
           world at the moment, and maybe even find a job or two!
         </p>
+        <Link href={"/sessions"}>
+          <a>
+            <h2>Session Recaps</h2>
+          </a>
+        </Link>
+        <p>
+          Notes for each and every single session have been added to the
+          website. Looking to catch yourself back up on what happened in session
+          3? This is the place to do it!
+        </p>
       </div>
     </div>
   );
