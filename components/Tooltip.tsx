@@ -1,10 +1,9 @@
 export interface TooltipProps {
   text: string;
-  className: string;
 }
 
 export const Tooltip: React.FC<TooltipProps> = (props) => {
-  const { text, children, className } = props;
+  const { text, children } = props;
 
   return (
     <div className={"tooltip"}>

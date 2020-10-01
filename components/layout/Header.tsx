@@ -1,9 +1,15 @@
 import Link from "next/link";
 import clsx from "clsx";
 import { useRouter } from "next/router";
-import { HomeIcon, NewspaperIcon, ArchiveIcon } from "@/components/icons";
+import {
+  HomeIcon,
+  NewspaperIcon,
+  ArchiveIcon,
+  SignOutIcon,
+} from "@/components/icons";
 import { BaseIconProps } from "../icons/BaseIcon";
 import { Tooltip } from "@/components/Tooltip";
+import { useAuth } from "@/helpers/auth";
 
 interface IPageConfig {
   path: string;
@@ -29,16 +35,19 @@ const pageConfig: IPageConfig[] = [
   },
 ];
 
-export const Header: React.FC = (props) => {
+export const Header: React.FC = () => {
   const router = useRouter();
+  const { signIn, signOut, user } = useAuth();
 
   return (
-    <nav className={"flex items-center justify-between px-4 md:px-8 "}>
-      <img
-        src={"/Eberron.png"}
-        alt={"Eberron Campaign"}
-        className={"w-12 h-12 my-1"}
-      />
+    <nav className={"flex items-center px-4 md:px-8 "}>
+      <div className={"flex items-center flex-grow w-full"}>
+        <img
+          src={"/Eberron.png"}
+          alt={"Eberron Campaign"}
+          className={"w-12 h-12 my-1"}
+        />
+      </div>
       <div className={"h-full flex"}>
         {pageConfig.map((page, index) => {
           const { Icon, path, label } = page;
@@ -59,6 +68,19 @@ export const Header: React.FC = (props) => {
             </Tooltip>
           );
         })}
+      </div>
+      <div className={"flex items-center h-full flex-grow justify-end w-full"}>
+        <button
+          className={
+            "px-3 py-2 text-sm uppercase font-semibold text-blue-700 hover:bg-blue-200 rounded focus:shadow-outline"
+          }
+          onClick={(evt) => {
+            user ? signOut() : signIn();
+            evt.currentTarget.blur();
+          }}
+        >
+          {user ? "Logout" : "Login"}
+        </button>
       </div>
     </nav>
   );

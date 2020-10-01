@@ -4,6 +4,7 @@ import "typeface-playfair-display";
 import "typeface-fira-sans";
 import { Header, Content } from "../components/layout";
 import Head from "next/head";
+import { AuthProvider } from "../helpers/auth/AuthProvider";
 
 interface MyAppProps {
   Component: new () => React.Component<any>;
@@ -14,7 +15,7 @@ const MyApp: React.FC<MyAppProps> = (props) => {
   const { Component, pageProps } = props;
 
   return (
-    <>
+    <AuthProvider>
       <Head>
         <title>Eberron</title>
         <meta name="description" content="Eberron Campaign Resources" />
@@ -32,7 +33,7 @@ const MyApp: React.FC<MyAppProps> = (props) => {
           </Content>
         </div>
       </div>
-    </>
+    </AuthProvider>
   );
 };
 
