@@ -27,7 +27,7 @@ const ChronicleEntry: React.FC = (props) => {
       </div>
       <div className={"w-full max-w-xl mx-auto flex justify-between py-4"}>
         <div>
-          {entryIndex - 1 > 0 && (
+          {entryIndex - 1 >= 0 && (
             <Link
               href={`/chronicle/${chronicleEntries[entryIndex - 1].meta.url}`}
             >
