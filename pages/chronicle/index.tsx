@@ -1,5 +1,5 @@
-import { chronicleEntries } from "@/content/chronicle";
 import Link from "next/link";
+import { chronicleEntriesReverse } from "@/content/chronicle";
 
 const Chronicle: React.FC = () => {
   return (
@@ -14,29 +14,26 @@ const Chronicle: React.FC = () => {
       >
         Articles
       </h2>
-      {chronicleEntries.reverse().map((entry, index) => (
-        <>
-          <hr />
-          <Link href={"/chronicle/" + entry.meta.url} key={index}>
-            <a
-              className={
-                "w-full py-6 flex flex-col hover:bg-smoke-lightest px-10"
-              }
-            >
-              <span className={"font-newspaper text-xl font-semibold"}>
-                {entry.meta.title}
+      {chronicleEntriesReverse.map((entry, index) => (
+        <Link href={"/chronicle/" + entry.meta.url} key={index}>
+          <a
+            className={
+              "w-full py-6 flex flex-col hover:bg-smoke-lightest px-10 border-t"
+            }
+          >
+            <span className={"font-newspaper text-xl font-semibold"}>
+              {entry.meta.title}
+            </span>
+            {entry.meta.subtitle && (
+              <span className={"font-newspaper text-gray-800"}>
+                {entry.meta.subtitle}
               </span>
-              {entry.meta.subtitle && (
-                <span className={"font-newspaper text-gray-800"}>
-                  {entry.meta.subtitle}
-                </span>
-              )}
-              <span className={"mt-4 text-gray-800 text-sm"}>
-                {entry.meta.author + " ● " + entry.meta.datePosted}
-              </span>
-            </a>
-          </Link>
-        </>
+            )}
+            <span className={"mt-4 text-gray-800 text-sm"}>
+              {entry.meta.author + " ● " + entry.meta.datePosted}
+            </span>
+          </a>
+        </Link>
       ))}
       <hr />
     </div>

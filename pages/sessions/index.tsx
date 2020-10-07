@@ -9,23 +9,20 @@ const Sessions: React.FC = () => {
         Sessions
       </h2>
       {sessionEntries.map((entry, index) => (
-        <>
-          <hr />
-          <Link href={"/sessions/" + (index + 1)} key={index}>
-            <a
-              className={
-                "w-full py-6 flex flex-col hover:bg-smoke-lightest px-10"
-              }
-            >
-              <span className={"font-title text-xl font-semibold"}>
-                {`Session ${index + 1}: ${entry.meta.sessionTitle}`}
-              </span>
-              <span className={" text-gray-800 text-sm"}>
-                {dateToLongString(entry.meta.datePlayed)}
-              </span>
-            </a>
-          </Link>
-        </>
+        <Link href={"/sessions/" + (index + 1)} key={index}>
+          <a
+            className={
+              "w-full py-6 flex flex-col hover:bg-smoke-lightest px-10 border-t"
+            }
+          >
+            <span className={"font-title text-xl font-semibold"}>
+              {`Session ${index + 1}: ${entry.meta.sessionTitle}`}
+            </span>
+            <span className={" text-gray-800 text-sm"}>
+              {dateToLongString(entry.meta.datePlayed)}
+            </span>
+          </a>
+        </Link>
       ))}
       <hr />
     </div>

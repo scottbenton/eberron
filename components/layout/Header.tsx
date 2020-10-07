@@ -43,8 +43,8 @@ export const Header: React.FC = (props) => {
         {pageConfig.map((page, index) => {
           const { Icon, path, label } = page;
           return (
-            <Tooltip text={label}>
-              <Link key={index} href={path}>
+            <Tooltip text={label} key={index}>
+              <Link href={path}>
                 <a
                   className={clsx(
                     "h-full flex items-center px-4 py-5 fill-current focus:outline-none  box-border rounded-b-md relative",
