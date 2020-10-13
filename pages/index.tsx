@@ -3,7 +3,7 @@ import Link from "next/link";
 const Home: React.FC = () => {
   return (
     <div className={"h-full flex-grow flex flex-col p-4"}>
-      <div className="mx-auto prose">
+      <div className="mx-auto prose-sm md:prose">
         <h1>Scott's Eberron Campaign</h1>
         <Link href={"/chronicle"}>
           <a>

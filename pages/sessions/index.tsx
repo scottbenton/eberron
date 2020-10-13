@@ -12,7 +12,7 @@ const Sessions: React.FC = () => {
         <Link href={"/sessions/" + (index + 1)} key={index}>
           <a
             className={
-              "w-full py-6 flex flex-col hover:bg-smoke-lightest px-10 border-t"
+              "w-full py-4 md:py-6 flex flex-col hover:bg-smoke-lightest px-6 md:px-10 border-t"
             }
           >
             <span className={"font-title text-xl font-semibold"}>

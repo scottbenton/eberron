@@ -1,6 +1,7 @@
 import * as Post1 from "./9-24-2020.mdx";
 import * as Post2 from "./9-30-2020.mdx";
 import * as Post3 from "./10-6-2020.mdx";
+import * as Post4 from "./10-12-2020.mdx";
 
 export interface IChronicleEntry {
   meta: {
@@ -13,7 +14,7 @@ export interface IChronicleEntry {
   content: React.ReactNode;
 }
 
-const entries = [Post1, Post2, Post3];
+const entries = [Post1, Post2, Post3, Post4];
 
 export const chronicleEntries: IChronicleEntry[] = entries.map((Entry) => ({
   meta: Entry.meta,

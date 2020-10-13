@@ -17,13 +17,17 @@ const SessionEntry: React.FC = (props) => {
 
   return (
     <div className={"flex flex-col px-4 w-full h-full flex-grow"}>
-      <div className={"max-w-xl block prose mx-auto my-8 w-full flex-grow"}>
+      <div
+        className={
+          "max-w-xl block md:prose prose-sm mx-auto my-8 w-full flex-grow"
+        }
+      >
         <h1>{`Session ${intSession}: ${currentEntry.meta.sessionTitle}`}</h1>
 
-        <span className={"text-gray-700 mt-4 block text-xl"}>
+        <span className={"text-gray-700 block text-xl -mt-6"}>
           {dateToLongString(currentEntry.meta.datePlayed)}
         </span>
-        <hr />
+        <div className={"border-b border mt-4 md:mt-6 "} />
         {currentEntry?.content}
       </div>
       <div className={"w-full max-w-xl mx-auto flex justify-between py-4"}>
