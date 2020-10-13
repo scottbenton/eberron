@@ -18,7 +18,7 @@ const ChronicleEntry: React.FC = (props) => {
         <h1 className={"font-newspaper"}>{currentEntry.meta.title}</h1>
         <span
           className={
-            "text-xl md:text-2xl text-gray-900 font-newspaper block -mt-6"
+            "text-xl md:text-2xl text-gray-900 font-newspaper block -mt-4"
           }
         >
           {currentEntry.meta.subtitle}
