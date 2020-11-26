@@ -4,7 +4,9 @@ import { dateToLongString } from "@/helpers/time-helpers";
 const Sessions: React.FC = () => {
   return (
     <div className={"flex flex-col py-4 mx-auto max-w-2xl w-full"}>
-      <h1 className={"text-center text-4xl  font-title px-4"}>Session Notes</h1>
+      <h1 className={"text-center text-4xl  font-title px-4 "}>
+        Session Notes
+      </h1>
       <h2 className={"font-title mt-6  mb-2 uppercase tracking-wider px-10"}>
         Sessions
       </h2>

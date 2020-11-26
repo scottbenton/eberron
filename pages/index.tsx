@@ -27,6 +27,16 @@ const Home: React.FC = () => {
           3? This is the place to do it!
         </p>
         <h2>Resources</h2>
+        <Link href={"/dm-prep"}>
+          <a>How I Plan Sessions</a>
+        </Link>
+        <span
+          className={
+            "text-xs font-bold tracking-wider uppercase text-white bg-blue-700 rounded px-1 ml-1"
+          }
+        >
+          New
+        </span>
         {/* <Link href={"/angelica-cipher"}>
           <a className={"block"}>Angelica's Journal Cipher</a>
         </Link> */}
