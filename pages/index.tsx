@@ -30,13 +30,6 @@ const Home: React.FC = () => {
         <Link href={"/dm-prep"}>
           <a>How I Plan Sessions</a>
         </Link>
-        <span
-          className={
-            "text-xs font-bold tracking-wider uppercase text-white bg-blue-700 rounded px-1 ml-1"
-          }
-        >
-          New
-        </span>
         {/* <Link href={"/angelica-cipher"}>
           <a className={"block"}>Angelica's Journal Cipher</a>
         </Link> */}

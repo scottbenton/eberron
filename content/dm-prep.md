@@ -8,15 +8,13 @@ I have three main tools that I use to prep for sessions.
 1. DND Beyond for any and all stats & combat based information
 1. OneNote, which contains overarching story information, backstory, character motivations, etc.
 
-Despite this, most of my time planning doesn't necessarily come from these tools.
-Throughout the week, I often think of fun things to add or change in the next session, leading to modifications in individual encounters or characters.
-With that being said, lets break these down.
+In addition to these physical methods, I also spend time throughout the week just thinking & planning about the next session.
+Lets break these down.
 
 ## Page of Notes
 
 The page of notes is what I use session to session.
 [Here](/Session12Redacted.pdf) is a redacted version of my notes from [session 12](/sessions/12)
-
 The page has seven different sections
 
 1. Summary: A 2-3 sentence summary of the previous session
@@ -27,17 +25,14 @@ The page has seven different sections
 1. Random Names: Exactly what it sounds like
 1. Hooks: Different threads that the party could potentially pull on
 
-Most of these are fairly self explanatory, but I think that the hooks and the events are potentially the two most important sections.
-
 Events is reserved for things that I think have a very high likelihood of happening.
-I have planned for these events to occur, and I generally have a good feel for what and why it will happen.
-Most of the time, I hopefully have a plan for how to transition the group from one to the next.
+I've planned these out, I generally have encounters or ideas for how they will play out and transition between them.
 
 Hooks, on the other hand, are mostly just ideas that I have floating around.
 These can vary from week to week as I plan and think.
-In the Session 12 pdf, two-thirds of the hooks are hidden because the group hasn't triggered them yet.
-The remaining hook is a precursor to the Wren d'Deneith mission.
-As I planned this hook out further, the details and names shifted.
+In the Session 12 pdf, two of the hooks are hidden because they haven't happened.
+The remaining hook is an early version of the Torlan Mroranon mission.
+As I planned this hook out further, the details of the story and names of characters shifted.
 
 ## DnD Beyond
 
@@ -51,10 +46,5 @@ OneNote contains all of the continuing information that continues throughout wee
 Its a good place to store NPC information, as well as character backstory reminders.
 
 One useful page I have just contains information about how different parties in Eberron relate to each other.
-Pretty much just who is working with who, which groups are working against each other, why groups hate each other, and the like.
 This is useful for planning out larger story arcs and tying more minor story arcs to a larger picture.
 By creating a board like this, I am able to connect different subplots in a more meaningful way, as well as plan for potential future threats and story lines.
-
----
-
-OneNote allows me to keep a cohesive larger story in mind while I use DND Beyond to plan encounters, and my page of notes to run sessions. In addition to all of these tools, a functioning DM screen allows me to have information on game mechanics and some worldbuilding information that I might need during a session.
