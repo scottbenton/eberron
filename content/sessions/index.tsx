@@ -17,6 +17,8 @@ import * as Session16 from "./session-16.mdx";
 import * as Session17 from "./session-17.mdx";
 import * as Session18 from "./session-18.mdx";
 import * as Session19 from "./session-19.mdx";
+import * as Session20 from "./session-20.mdx";
+import * as Session21 from "./session-21.mdx";
 
 export interface ISessionEntry {
   meta: {
@@ -46,6 +48,8 @@ const entries = [
   Session17,
   Session18,
   Session19,
+  Session20,
+  Session21,
 ];
 
 export const sessionEntries: ISessionEntry[] = entries
