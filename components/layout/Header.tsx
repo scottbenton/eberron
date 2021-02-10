@@ -1,31 +1,30 @@
 import Link from "next/link";
 import clsx from "clsx";
 import { useRouter } from "next/router";
-import { HomeIcon, NewspaperIcon, ArchiveIcon } from "@/components/icons";
-import { BaseIconProps } from "../icons/BaseIcon";
+import { HomeOutline, NewspaperOutline, ArchiveOutline } from "heroicons-react";
 import { Tooltip } from "@/components/Tooltip";
 
 interface IPageConfig {
   path: string;
   label: string;
-  Icon: React.FC<BaseIconProps>;
+  icon: React.ReactElement;
 }
 
 const pageConfig: IPageConfig[] = [
   {
     path: "/",
     label: "Home",
-    Icon: HomeIcon,
-  },
-  {
-    path: "/chronicle",
-    label: "Korranberg Chronicle",
-    Icon: NewspaperIcon,
+    icon: <HomeOutline />,
   },
   {
     path: "/sessions",
     label: "Session Notes",
-    Icon: ArchiveIcon,
+    icon: <ArchiveOutline />,
+  },
+  {
+    path: "/chronicle",
+    label: "Korranberg Chronicle",
+    icon: <NewspaperOutline />,
   },
 ];
 
@@ -37,23 +36,23 @@ export const Header: React.FC = (props) => {
       <img
         src={"/Eberron.png"}
         alt={"Eberron Campaign"}
-        className={"w-12 h-12 my-1"}
+        className={"my-1 h-12"}
       />
       <div className={"h-full flex"}>
         {pageConfig.map((page, index) => {
-          const { Icon, path, label } = page;
+          const { icon, path, label } = page;
           return (
             <Tooltip text={label} key={index}>
               <Link href={path}>
                 <a
                   className={clsx(
-                    "h-full flex items-center px-4 py-5 fill-current focus:outline-none  box-border rounded-b-md relative",
+                    "h-full flex items-center px-3 py-5 fill-current focus:outline-none  box-border rounded-b-md relative transition-colors duration-200 ease-in-out",
                     path === router.pathname
-                      ? "text-white bg-blue-600 hover:bg-blue-700"
-                      : " text-gray-700 hover:bg-blue-300"
+                      ? "gradient-bg hover:from-blue-700 hover:to-indigo-700 text-white"
+                      : "hover:bg-indigo-300 text-gray-700"
                   )}
                 >
-                  <Icon className={"w-6"} />
+                  {icon}
                 </a>
               </Link>
             </Tooltip>

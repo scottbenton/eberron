@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import "typeface-open-sans";
 import "typeface-playfair-display";
-import "typeface-fira-sans";
+import "typeface-rubik";
 import { Header, Content } from "../components/layout";
 import Head from "next/head";
 

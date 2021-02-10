@@ -3,7 +3,7 @@ module.exports = {
     fontFamily: {
       body: ["Open Sans", "sans-serif"],
       newspaper: ["Playfair Display", "serif"],
-      title: ["Fira Sans", "sans-serif"],
+      title: ["Rubik", "sans-serif"],
       mono: ["mono"],
     },
     extend: {
