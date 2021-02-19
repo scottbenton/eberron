@@ -5,7 +5,6 @@ import {
   ResourceLink,
 } from "../components/home";
 import { dateToLongString } from "../helpers/time-helpers";
-import { NewspaperOutline, ArchiveOutline } from "heroicons-react";
 
 import { sessionEntries } from "../content/sessions";
 import { chronicleEntriesReverse } from "../content/chronicle";
