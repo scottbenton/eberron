@@ -1,0 +1,86 @@
+import { TextPage } from "@/components/TextPage";
+
+<TextPage>
+
+# Magic Item Creation
+
+---
+
+## Skill Level
+
+In order to create a magic item, the creator must be of a certain skill level.
+For an arcane caster such as an artificer, the skill required is _arcana_.
+In addition, different time periods are required to construct magical items of differing rarities.
+
+| Item Rarity | Minimum Skill | Creation Time (weeks) |
+| ----------- | ------------- | --------------------- |
+| Common      | +2            | 1                     |
+| Uncommon    | +4            | 2                     |
+| Rare        | +6            | 10                    |
+| Very Rare   | +8            | 25                    |
+| Legendary   | +10           | 50                    |
+
+## Creation Components & Costs
+
+In addition to the skill and time requirements needed to create an item, creators must also have the components on hand required to create the item.
+While most mundane components (and some specialized components) for magic items can be purchased, some rarer components might be more challenging to obtain.
+For example, a Rare Item may require a scale from a **Young Blue Dragon** _(CR 9)_, while the creation of an Uncommon Item might require something more mundane, such as a plant found only in Q'Barra.
+
+Just as Dragon Shards can be used to replace components in spells, in many cases Dragon Shards or other powerful magic amplifiers can be used to replace rare components.
+The Dragon Shard can replace a rare component of equal value in the creation of the item.
+
+Costs for the tools, and components, as well as the CR of challenge required to obtain rare components, are listed in the table below.
+
+| Item Rarity | Creation Cost (gp) | Rare Component CR |
+| ----------- | ------------------ | ----------------- |
+| Common      | 50                 | 1-3               |
+| Uncommon    | 200                | 4-8               |
+| Rare        | 2,000              | 9-12              |
+| Very Rare   | 20,000             | 13-18             |
+| Legendary   | 100,000            | 19+               |
+
+## Crafting
+
+Once all the components are obtained, crafting of the item can begin.
+Crafting will require using tools a character is proficient in to create the magic item.
+A tool check can be made near the end of the time frame at a "critical point" in the crafting to determine how successful creation of the magic item is.
+
+| Item Rarity | DC of Tool Check |
+| ----------- | ---------------- |
+| Common      | 12               |
+| Uncommon    | 16               |
+| Rare        | 20               |
+| Very Rare   | 24               |
+| Legendary   | 28               |
+
+The DC of the tool check matches with the skill it would take to complete an item in the average amount of time.
+Rolling high enough causes the item to be finished quicker.
+Rolling lower causes the item to take longer to complete, or even causes item creation to fail.
+If the roll is especially bad, the components for the magic item may even be destroyed.
+
+| Roll vs DC                     | Result                                               |
+| ------------------------------ | ---------------------------------------------------- |
+| _roll_ <= (DC - 10)            | Item creation fails & components are destroyed       |
+| (DC - 10) < _roll_ <= (DC - 5) | Item creation fails, but components are ok           |
+| (DC - 5) <= _roll_ < DC        | Item creation succeeds, but takes longer than normal |
+| DC <= _roll_ < (DC + 5)        | Item creation succeeds in the normal time frame      |
+| (DC + 5) <= _roll_             | Item creation succeeds, taking less time than normal |
+
+## Schematics
+
+Schematics offer a way for item creation to be a little less risky.
+If a schematic can be found or created for a magic item, the tool check for creating the item can be made with advantage.
+You can generally obtain schemas for magic items from House Cannith, the library of Arcanix, or from an experienced artificer.
+
+You can also create your own schema using the table below.
+The minimum skill required to create a schema is the same as the minimum skill required to craft an item.
+
+| Item Rarity | Minimum Skill | Work Weeks |
+| ----------- | ------------- | ---------- |
+| Common      | +2            | 3 days     |
+| Uncommon    | +4            | 1          |
+| Rare        | +6            | 3          |
+| Very Rare   | +8            | 8          |
+| Legendary   | +10           | 16         |
+
+</TextPage>

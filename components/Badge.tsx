@@ -2,19 +2,23 @@ import clsx from "clsx";
 
 export interface BadgeProps {
   className?: string;
+  label: React.ReactNode;
 }
 
 export const Badge: React.FC<BadgeProps> = (props) => {
-  const { className, children } = props;
+  const { className, children, label } = props;
 
   return (
-    <span
-      className={clsx(
-        className,
-        "rounded-full bg-blue-700 text-white text-sm uppercase tracking-wide"
-      )}
-    >
+    <div className={"flex items-baseline"}>
       {children}
-    </span>
+      <span
+        className={clsx(
+          className,
+          "rounded-full bg-blue-700 text-white text-xs px-1 -m uppercase tracking-wide ml-2"
+        )}
+      >
+        {label}
+      </span>
+    </div>
   );
 };

@@ -58,8 +58,27 @@ const Home: React.FC = () => {
       </HomeSection>
       <HomeSection title={"Resources"}>
         <ul>
-          <ResourceLink href={"/dm-prep"}>How I Plan Sessions</ResourceLink>
-          <ResourceLink href={"https://eberronmap.johnarcadian.com/"}>
+          <ResourceLink
+            href={"/magic-item-creation"}
+            localStorageKey={"magic-item-creation"}
+          >
+            Magic Item Creation Rules
+          </ResourceLink>
+          <ResourceLink
+            href={
+              "https://www.dndbeyond.com/posts/611-around-khorvaire-in-fifty-days-encounters-of-the"
+            }
+            localStorageKey={"around-khorvaire"}
+          >
+            Around Khorvaire in Fifty Days - Basis for this Campaign
+          </ResourceLink>
+          <ResourceLink href={"/dm-prep"} localStorageKey={"dm-prep"}>
+            How I Plan Sessions
+          </ResourceLink>
+          <ResourceLink
+            href={"https://eberronmap.johnarcadian.com/"}
+            localStorageKey={"eberron-map"}
+          >
             World Map
           </ResourceLink>
         </ul>

@@ -1,0 +1,24 @@
+import React, { useEffect, useState } from "react";
+import { Badge } from "./Badge";
+export interface NewBadgeProps {
+  localStorageKey: string;
+}
+
+export const NewBadge: React.FC<NewBadgeProps> = (props) => {
+  const { localStorageKey, children } = props;
+
+  const [shouldDisplayBadge, setShouldDisplayBadge] = useState<boolean>(false);
+  console.debug(shouldDisplayBadge);
+
+  useEffect(() => {
+    setShouldDisplayBadge(
+      window.localStorage.getItem(localStorageKey) !== "true"
+    );
+    window.localStorage.setItem(localStorageKey, "true");
+  }, [localStorageKey]);
+
+  if (shouldDisplayBadge) {
+    return <Badge label={"New"}>{children}</Badge>;
+  }
+  return <>{children}</>;
+};
