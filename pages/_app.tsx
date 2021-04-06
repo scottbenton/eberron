@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import "typeface-open-sans";
-import "typeface-playfair-display";
+import "typeface-roboto-slab";
 import "typeface-rubik";
 import { Header, Content } from "../components/layout";
 import Head from "next/head";

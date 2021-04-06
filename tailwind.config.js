@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ["Open Sans", "sans-serif"],
-      newspaper: ["Playfair Display", "serif"],
+      newspaper: ["Roboto Slab", "serif"],
       title: ["Rubik", "sans-serif"],
       mono: ["mono"],
     },

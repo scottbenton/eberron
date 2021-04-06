@@ -14,7 +14,7 @@ const ChronicleEntry: React.FC = (props) => {
 
   return (
     <div className={"flex flex-col px-4 w-full"}>
-      <div className={"max-w-xl block prose-sm md:prose mx-auto mb-8"}>
+      <div className={"max-w-xl w-full block prose-sm md:prose mx-auto mb-8"}>
         <h1 className={"font-newspaper"}>{currentEntry.meta.title}</h1>
         <span
           className={
