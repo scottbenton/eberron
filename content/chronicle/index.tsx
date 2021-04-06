@@ -5,7 +5,7 @@ import * as Post4 from "./2020-10-12.mdx";
 import * as Post5 from "./2021-01-04.mdx";
 import * as Post6 from "./2021-02-03.mdx";
 import * as Post7 from "./2021-03-11.mdx";
-import * as Post8 from "./2021-04-05.mdx";
+import * as Post8 from "./2021-04-06.mdx";
 
 export interface IChronicleEntry {
   meta: {
