@@ -1,4 +1,4 @@
-import { ArrowRight, DotsHorizontal, DotsVertical } from "heroicons-react";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 import { CircleIcon } from "../CircleIcon";
 
@@ -37,7 +37,7 @@ export const MostRecentArticle: React.FC<MostRecentArticleProps> = (props) => {
             <div className={"text-gray-700"}>{secondaryText}</div>
           </div>
           <CircleIcon className={"gradient-bg"}>
-            <ArrowRight />
+            <ArrowRightIcon className={"w-6 h-6"} />
           </CircleIcon>
         </div>
       </Link>

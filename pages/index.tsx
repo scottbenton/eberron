@@ -59,6 +59,12 @@ const Home: React.FC = () => {
       <HomeSection title={"Resources"}>
         <ul>
           <ResourceLink
+            href={"/trial-tracker"}
+            localStorageKey={"trial-tracker"}
+          >
+            Trial Tracker
+          </ResourceLink>
+          <ResourceLink
             href={"/magic-item-creation"}
             localStorageKey={"magic-item-creation"}
           >
