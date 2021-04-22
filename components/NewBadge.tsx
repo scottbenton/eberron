@@ -8,7 +8,6 @@ export const NewBadge: React.FC<NewBadgeProps> = (props) => {
   const { localStorageKey, children } = props;
 
   const [shouldDisplayBadge, setShouldDisplayBadge] = useState<boolean>(false);
-  console.debug(shouldDisplayBadge);
 
   useEffect(() => {
     setShouldDisplayBadge(

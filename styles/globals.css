@@ -2,7 +2,7 @@
 
 html,
 body {
-  @apply h-full font-body;
+  @apply h-full font-body text-base;
 }
 
 h1,
