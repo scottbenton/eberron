@@ -26,14 +26,14 @@ export const TrialProgressBar: React.FC<TrialProgressBarProps> = (props) => {
 
   return (
     <div className={"bg-gray-200 rounded-lg shadow-inner p-4 mt-6"}>
-      <div className={"flex justify-between items-center"}>
+      <div className={"flex justify-between items-center flex-wrap"}>
         <h2 className={"text-xl text-gray-700"}>
           {title}: {value} points
         </h2>
         <div>
           <button
             className={
-              "p-2 rounded-full focus:outline-none focus:shadow-outline bg-gray-400 hover:bg-blue-200 text-blue-700 flex-shrink-0 transition-all duration-300 ease-in-out"
+              "ml-2 p-2 rounded-full focus:outline-none focus:shadow-outline bg-gray-400 hover:bg-blue-200 text-blue-700 flex-shrink-0 transition-all duration-300 ease-in-out"
             }
             onClick={(evt) => {
               handleDecrement();
