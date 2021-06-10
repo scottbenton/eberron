@@ -29,6 +29,7 @@ import * as Session28 from "./session-28.mdx";
 import * as Session29 from "./session-29.mdx";
 import * as Session30 from "./session-30.mdx";
 import * as Session31 from "./session-31.mdx";
+import * as Session32 from "./session-32.mdx";
 export interface ISessionEntry {
   meta: {
     datePlayed: Date;
@@ -69,6 +70,7 @@ const entries = [
   Session29,
   Session30,
   Session31,
+  Session32,
 ];
 
 export const sessionEntries: ISessionEntry[] = entries
