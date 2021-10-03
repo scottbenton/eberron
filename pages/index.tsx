@@ -8,6 +8,8 @@ import { dateToLongString } from "../helpers/time-helpers";
 
 import { sessionEntries } from "../content/sessions";
 import { chronicleEntriesReverse } from "../content/chronicle";
+import cheatSheet from "../content/cheat-sheet.json";
+import Link from "next/link";
 
 const mostRecentSessionIndex = sessionEntries.length;
 const mostRecentSession = sessionEntries[mostRecentSessionIndex - 1];
@@ -27,6 +29,20 @@ const Home: React.FC = () => {
       <p className={"text-gray-700 text-lg"}>
         Resources, notes, and more for my weekly Dungeons and Dragons Campaign
       </p>
+      <HomeSection title={"Cheat Sheet"}>
+        <p className={"text-gray-700"}>{cheatSheet.currentGoal}</p>
+        <div className={"inline-flex mt-2"}>
+          <Link href={"/cheat-sheet"}>
+            <a
+              className={
+                "h-full flex items-center px-4 py-2 fill-current focus:outline-none box-border rounded-md relative transition-colors duration-200 ease-in-out gradient-bg hover:from-blue-700 hover:to-indigo-700 text-white uppercase font-semibold text-sm"
+              }
+            >
+              View More
+            </a>
+          </Link>
+        </div>
+      </HomeSection>
       <HomeSection title={"Session Notes"}>
         <p className={"text-gray-700"}>What happened last week?</p>
         <MostRecentArticle

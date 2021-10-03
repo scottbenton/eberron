@@ -1,0 +1,72 @@
+{
+  "currentGoal": "Currently, the party is trying to talk to the head of the Gatekeeper Druids, Snappy Joe, in order to get more information about The Sovereign of Shadows and The All Seer.",
+  "gods": [
+    {
+      "name": "The All-Seer",
+      "knownInfo": "The All-Seer (also known as Belashyrra) is a daelkyr gifted with sight greater than any other. She is currently trapped somewhere in the Mournland, imprisoned by the Gatekeeper Druids. Belashyrra still has the ability to command minions, who up until recently were invading the goblin nation of Darguun. She also wants to orchestrate the downfall of The Sovereign of Shadows, who is capable of hiding themself from her.",
+      "sources": ["Snappy Joe"]
+    },
+    {
+      "name": "The Sovereign of Shadows",
+      "knownInfo": "The Sovereign of Shadows has been orchestrating much of the campaign so far. By leveraging Klara d'Cannith, this being has been able to start a war between the Cannith and Deneith houses. The Sovereign is interested in the downfall of The All-Seer, another powerful being with an intense hatred of the Sovereign.",
+      "sources": ["Klara d'Cannith"]
+    },
+    {
+      "name": "The Shadow in the Flame",
+      "knownInfo": "The legend goes that the Shadow in the Flame is an overlord trapped in the Silver Flame by Tira Miron. Even now the overlord plots its escape, aided by The Sovereign of Shadows.",
+      "sources": ["Jaela Daran", "High Cardinal Krozen"]
+    },
+    {
+      "name": "Lawsten's God",
+      "knownInfo": "A mysterious figure who seems intent on the downfall of The Sovereign of Shadows, Lawsten's God has appeared to him in multiple different forms.",
+      "sources": ["Lawsten's God, presumably"]
+    },
+    {
+      "name": "Milus's Benefactor",
+      "knownInfo": "Milus's benefactor has entered Milus's dreams on a few occasions to aid in the development of magical technology, or to give Milus access to spells unlike any he has seen. Taking the form of a gruff dwarf, he has admitted to being quite partial to Milus.",
+      "sources": ["Perhaps the dwarves?", "Religious Experts"]
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Jaela Daran",
+      "description": "The Keeper of the Flame, who is largely kept in the dark about what is actually going on with the church. Definitely an evil child and will kill the party at some point."
+    },
+    {
+      "name": "High Cardinal Krozen",
+      "description": "The regent for the Church of the Silver Flame. Keeps Jaela in the dark about the goings on, and enjoys wild weed from time to time."
+    },
+    {
+      "name": "Klara d'Cannith",
+      "description": "A shape shifting changeling who is currently disguised as a servant to Jaela."
+    },
+    {
+      "name": "Kaiden d'Deneith",
+      "description": "A hulking brute of a man last seen at Darcy's trial in Rekkenmark. Fled into the Mournland and put on a dark crown."
+    },
+    {
+      "name": "Snappy Joe",
+      "description": "The elusive head of the Gatekeeper Druids, currently residing in Thelanis, the fey realm."
+    }
+  ],
+  "places": [
+    {
+      "name": "Flamekeep",
+      "description": "The home of the Church of the Silver Flame"
+    },
+    {
+      "name": "The Twilight Demesne",
+      "description": "A Manifest Zone, where the feywild plane Thelanis intersects with Eberron. Snappy Joe is here."
+    },
+    {
+      "name": "The Mournland",
+      "description": "The ruins of the former nation of Cyre. Belashyrra is imprisoned somewhere within."
+    }
+  ],
+  "plotHooks": [
+    "At least one person other than Klara in the Church of the Silver Flame is working for the Sovereign.",
+    "The All-Seer's plans have been foiled, but Klara believes she is still a threat, and wants help trapping her away.",
+    "Lawsten's God wants The Sovereign of Shadows gone.",
+    "The poor Centaurs and Satyrs just want someone to play Capture the Kobold with them damn it."
+  ]
+}

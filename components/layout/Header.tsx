@@ -1,7 +1,12 @@
 import Link from "next/link";
 import clsx from "clsx";
 import { useRouter } from "next/router";
-import { HomeIcon, NewspaperIcon, ArchiveIcon } from "@heroicons/react/outline";
+import {
+  HomeIcon,
+  NewspaperIcon,
+  ArchiveIcon,
+  ClipboardListIcon,
+} from "@heroicons/react/outline";
 import { Tooltip } from "@/components/Tooltip";
 
 interface IPageConfig {
@@ -15,6 +20,11 @@ const pageConfig: IPageConfig[] = [
     path: "/",
     label: "Home",
     icon: <HomeIcon className={"w-6 h-6"} />,
+  },
+  {
+    path: "/cheat-sheet",
+    label: "Cheat Sheet",
+    icon: <ClipboardListIcon className={"w-6 h-6"} />,
   },
   {
     path: "/sessions",
