@@ -19,6 +19,16 @@ const CheatSheet: React.FC = (props) => {
         }
       />
       <CollapsibleSection
+        title={"Silver Flame Investigation Clues"}
+        content={
+          <ul>
+            {cheatSheetInfo.thraneClues.map((clue, index) => (
+              <li key={index}>{clue}</li>
+            ))}
+          </ul>
+        }
+      />
+      <CollapsibleSection
         title={"Gods & Eldritch Beings"}
         content={cheatSheetInfo.gods.map((god, index) => (
           <div key={index} className={index !== 0 ? "border-t mt-8 pt-2" : ""}>

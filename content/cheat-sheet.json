@@ -1,5 +1,5 @@
 {
-  "currentGoal": "Currently, the party is trying to talk to the head of the Gatekeeper Druids, Snappy Joe, in order to get more information about The Sovereign of Shadows and The All Seer.",
+  "currentGoal": "Currently, the party is waiting to talk to the head of the Gatekeeper Druids, Snappy Joe, in order to get more information about The Sovereign of Shadows and The All Seer. In the meantime, they are combing Flamekeep for clues about who in the Church is working for the Sovereign of Shadows.",
   "gods": [
     {
       "name": "The All-Seer",
@@ -23,8 +23,13 @@
     },
     {
       "name": "Milus's Benefactor",
-      "knownInfo": "Milus's benefactor has entered Milus's dreams on a few occasions to aid in the development of magical technology, or to give Milus access to spells unlike any he has seen. Taking the form of a gruff dwarf, he has admitted to being quite partial to Milus.",
-      "sources": ["Perhaps the dwarves?", "Religious Experts"]
+      "knownInfo": "Milus's benefactor has entered Milus's dreams on a few occasions to aid in the development of magical technology, or to give Milus access to spells unlike any he has seen. Taking the form of a gruff dwarf, he has admitted to being quite partial to Milus. Recently, the group has discovered that Milus is not the only one receiving magic from unknown sources.",
+      "sources": [
+        "Perhaps the dwarves?",
+        "Religious Experts",
+        "Calmorn",
+        "Mages at Arcanix"
+      ]
     }
   ],
   "npcs": [
@@ -47,6 +52,10 @@
     {
       "name": "Snappy Joe",
       "description": "The elusive head of the Gatekeeper Druids, currently residing in Thelanis, the fey realm."
+    },
+    {
+      "name": "Calmorn",
+      "description": "This somewhat unkempt wizard resides in Flamekeep, and runs drugs for High Cardinal Krozen. He is studying gravitational and time based magic."
     }
   ],
   "places": [
@@ -68,5 +77,11 @@
     "The All-Seer's plans have been foiled, but Klara believes she is still a threat, and wants help trapping her away.",
     "Lawsten's God wants The Sovereign of Shadows gone.",
     "The poor Centaurs and Satyrs just want someone to play Capture the Kobold with them damn it."
+  ],
+  "thraneClues": [
+    "Calmorn has, like Milus, been learning magical secrets in his dreams.",
+    "Jaela checks out religious texts quite often at the library, while Krozen does not.",
+    "Calmorn has been smuggling drugs for Krozen.",
+    "The Church and the Crown are at odds over who should rule Thrane."
   ]
 }
