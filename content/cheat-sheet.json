@@ -1,5 +1,5 @@
 {
-  "currentGoal": "Currently, the party is waiting to talk to the head of the Gatekeeper Druids, Snappy Joe, in order to get more information about The Sovereign of Shadows and The All Seer. In the meantime, they are combing Flamekeep for clues about who in the Church is working for the Sovereign of Shadows.",
+  "currentGoal": "Currently, the party is waiting to talk to the head of the Gatekeeper Druids, Snappy Joe, in order to get more information about The Sovereign of Shadows and The All Seer. In the meantime, they returned to Flamekeep in order to flush out the Sovereign's agents. The party managed to flush out a Raksasha masquerading as the Keeper of the Flame, Jaela Daran.",
   "gods": [
     {
       "name": "The All-Seer",
@@ -35,7 +35,7 @@
   "npcs": [
     {
       "name": "Jaela Daran",
-      "description": "The Keeper of the Flame, who is largely kept in the dark about what is actually going on with the church. Definitely an evil child and will kill the party at some point."
+      "description": "The Keeper of the Flame, who is largely kept in the dark about what is actually going on with the church. Secretly a Raksasha that the group found and outed."
     },
     {
       "name": "High Cardinal Krozen",
@@ -73,15 +73,10 @@
     }
   ],
   "plotHooks": [
-    "At least one person other than Klara in the Church of the Silver Flame is working for the Sovereign.",
+    "Before his death, Cardinal Mitul was supposed to meet with an agent of The Chamber, a clandestine group of dragons.",
+    "The Keeper of the Flame, Jaela Daran was a Raksasha working for the Sovereign of Shadows.",
     "The All-Seer's plans have been foiled, but Klara believes she is still a threat, and wants help trapping her away.",
     "Lawsten's God wants The Sovereign of Shadows gone.",
-    "The poor Centaurs and Satyrs just want someone to play Capture the Kobold with them damn it."
-  ],
-  "thraneClues": [
-    "Calmorn has, like Milus, been learning magical secrets in his dreams.",
-    "Jaela checks out religious texts quite often at the library, while Krozen does not.",
-    "Calmorn has been smuggling drugs for Krozen.",
-    "The Church and the Crown are at odds over who should rule Thrane."
+    "The Church of the Silver Flame had background checks on eveveryone, including information on Nishara's Family."
   ]
 }

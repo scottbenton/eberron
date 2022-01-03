@@ -1,5 +1,4 @@
 import React from "react";
-import { TextPage } from "@/components/TextPage";
 import cheatSheetInfo from "@/content/cheat-sheet.json";
 import { CollapsibleSection } from "../components/CollapsibleSection";
 
@@ -14,16 +13,6 @@ const CheatSheet: React.FC = (props) => {
           <ul>
             {cheatSheetInfo.plotHooks.map((hook, index) => (
               <li key={index}>{hook}</li>
-            ))}
-          </ul>
-        }
-      />
-      <CollapsibleSection
-        title={"Silver Flame Investigation Clues"}
-        content={
-          <ul>
-            {cheatSheetInfo.thraneClues.map((clue, index) => (
-              <li key={index}>{clue}</li>
             ))}
           </ul>
         }
