@@ -107,6 +107,7 @@ const Home: React.FC = () => {
       </HomeSection>
       <HomeSection title={"Intro Music"}>
         <ul className={"text-gray-700"}>
+          <AudioListItem source={"/TheAllSeer.mp3"} name={"The All Seer"} />
           <AudioListItem
             source={"/TheSovereignOfShadows.mp3"}
             name={"The Sovereign of Shadows"}
