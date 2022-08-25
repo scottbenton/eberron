@@ -103,6 +103,9 @@ const Home: React.FC = () => {
           >
             World Map
           </ResourceLink>
+          <ResourceLink href={"/horse-race"} localStorageKey={"horse-race"}>
+            Horse Race
+          </ResourceLink>
         </ul>
       </HomeSection>
       <HomeSection title={"Intro Music"}>

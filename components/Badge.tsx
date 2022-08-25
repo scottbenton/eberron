@@ -1,6 +1,7 @@
 import clsx from "clsx";
+import { PropsWithChildren } from "react";
 
-export interface BadgeProps {
+export interface BadgeProps extends PropsWithChildren {
   className?: string;
   label: React.ReactNode;
 }

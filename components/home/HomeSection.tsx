@@ -1,4 +1,6 @@
-export interface HomeSectionProps {
+import { PropsWithChildren } from "react";
+
+export interface HomeSectionProps extends PropsWithChildren {
   title: string;
   icon?: React.ReactNode;
 }

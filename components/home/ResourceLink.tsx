@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import Link from "next/link";
+import { PropsWithChildren } from "react";
 import { NewBadge } from "../NewBadge";
 
-export interface ResourceLinkProps {
+export interface ResourceLinkProps extends PropsWithChildren {
   href: string;
   className?: string;
   localStorageKey: string;

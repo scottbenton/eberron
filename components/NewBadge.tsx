@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { PropsWithChildren, useEffect, useState } from "react";
 import { Badge } from "./Badge";
-export interface NewBadgeProps {
+export interface NewBadgeProps extends PropsWithChildren {
   localStorageKey: string;
 }
 
