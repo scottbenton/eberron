@@ -98,7 +98,11 @@ const entries = [
 
 export const sessionEntries: ISessionEntry[] = entries
   .map((Entry) => ({
-    meta: Entry.meta,
+    meta: ((Entry as unknown) as ISessionEntry).meta,
     content: <Entry.default />,
   }))
-  .sort((e1, e2) => e1.meta.datePlayed - e2.meta.datePlayed);
+  .sort(
+    (e1, e2) =>
+      ((e1 as unknown) as ISessionEntry).meta.datePlayed.getUTCDate() -
+      ((e2 as unknown) as ISessionEntry).meta.datePlayed.getUTCDate()
+  );

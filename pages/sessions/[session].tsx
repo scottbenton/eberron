@@ -7,7 +7,9 @@ const SessionEntry: React.FC = (props) => {
   const router = useRouter();
   const { session } = router.query;
 
-  const intSession = parseInt(Array.isArray(session) ? session[0] : session);
+  const intSession = parseInt(
+    (Array.isArray(session) ? session[0] : session) || ""
+  );
 
   const currentEntry = sessionEntries[intSession - 1];
 

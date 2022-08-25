@@ -77,7 +77,9 @@ const AngelicaCypher: React.FC = (props) => {
         alphabetRE.test(currentChar) &&
         (i === 0 || angelicasLog[i - 1] !== "\\")
       ) {
-        output.push(currentCipher[currentChar.toLowerCase()] ?? "_");
+        output.push(
+          currentCipher[currentChar.toLowerCase() as keyof cipher] ?? "_"
+        );
       } else {
         output.push(currentChar);
       }
@@ -85,12 +87,14 @@ const AngelicaCypher: React.FC = (props) => {
     return output;
   };
 
-  const onInputChange = (value, key) => {
+  const onInputChange = (value: string, key: string) => {
     setInputAlphabet((prevAlphabet) => {
       let newAlphabet = { ...prevAlphabet };
 
       let newChar = value.replace(/[^a-z]/gi, "").slice(-1);
-      newAlphabet[key] = newChar ? newChar.toLowerCase() : undefined;
+      newAlphabet[key as keyof cipher] = newChar
+        ? newChar.toLowerCase()
+        : undefined;
 
       if (Object.values(newAlphabet).join("") === cipherString) {
         setCorrectSolution(true);
@@ -111,12 +115,12 @@ const AngelicaCypher: React.FC = (props) => {
       <div className={"flex flex-wrap justify-center mt-4"}>
         {Object.keys(alphabetCipher).map((char, index) => (
           <div key={index} className={"flex flex-col items-center"}>
-            <span>{alphabetCipher[char]}</span>
+            <span>{alphabetCipher[char as keyof cipher]}</span>
             <input
               className={
                 "bg-transparent border-b-2 px-2 py-1 border-gray-500 focus:border-blue-500 focus:outline-none w-8 text-center"
               }
-              value={inputAlphabet[char] ?? ""}
+              value={inputAlphabet[char as keyof cipher] ?? ""}
               onChange={(evt: ChangeEvent<HTMLInputElement>) =>
                 onInputChange(evt.target.value, char)
               }

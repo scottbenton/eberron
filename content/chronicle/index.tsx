@@ -34,7 +34,7 @@ const entries = [
 ];
 
 export const chronicleEntries: IChronicleEntry[] = entries.map((Entry) => ({
-  meta: Entry.meta,
+  meta: ((Entry as unknown) as IChronicleEntry).meta,
   content: <Entry.default />,
 }));
 
