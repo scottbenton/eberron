@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 import {
   HomeIcon,
   NewspaperIcon,
-  ArchiveIcon,
-  ClipboardListIcon,
-} from "@heroicons/react/outline";
+  ArchiveBoxIcon,
+  ClipboardDocumentListIcon,
+} from "@heroicons/react/24/outline";
 import { Tooltip } from "@/components/Tooltip";
 
 interface IPageConfig {
@@ -24,12 +24,12 @@ const pageConfig: IPageConfig[] = [
   {
     path: "/cheat-sheet",
     label: "Cheat Sheet",
-    icon: <ClipboardListIcon className={"w-6 h-6"} />,
+    icon: <ClipboardDocumentListIcon className={"w-6 h-6"} />,
   },
   {
     path: "/sessions",
     label: "Session Notes",
-    icon: <ArchiveIcon className={"w-6 h-6"} />,
+    icon: <ArchiveBoxIcon className={"w-6 h-6"} />,
   },
   {
     path: "/chronicle",

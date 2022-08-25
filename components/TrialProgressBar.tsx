@@ -1,10 +1,10 @@
 import {
   PlusIcon,
   MinusIcon,
-  EmojiHappyIcon,
-  EmojiSadIcon,
+  FaceSmileIcon,
+  FaceFrownIcon,
   QuestionMarkCircleIcon,
-} from "@heroicons/react/solid";
+} from "@heroicons/react/20/solid";
 
 export interface TrialProgressBarProps {
   value: number;
@@ -68,9 +68,9 @@ export const TrialProgressBar: React.FC<TrialProgressBarProps> = (props) => {
         ></span>
       </div>
       <div className={"flex justify-between text-gray-600 mt-2"}>
-        <EmojiSadIcon className={"w-6 h-6"} />
+        <FaceFrownIcon className={"w-6 h-6"} />
         <QuestionMarkCircleIcon className={"w-6 h-6"} />
-        <EmojiHappyIcon className={"w-6 h-6"} />
+        <FaceSmileIcon className={"w-6 h-6"} />
       </div>
     </div>
   );

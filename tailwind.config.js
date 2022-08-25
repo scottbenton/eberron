@@ -30,8 +30,9 @@ module.exports = {
       },
     },
   },
-  purge: {
-    content: ["./{components,content,pages}/**/*.{js,mdx,ts,tsx,jsx}"],
-  },
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   plugins: [require("@tailwindcss/typography")],
 };

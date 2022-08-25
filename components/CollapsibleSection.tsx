@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React, { useState } from "react";
-import ArrowIcon from "@heroicons/react/outline/ChevronRightIcon";
+import ArrowIcon from "@heroicons/react/24/outline/ChevronRightIcon";
 
 export interface CollapsibleSectionProps {
   initOpen?: boolean;

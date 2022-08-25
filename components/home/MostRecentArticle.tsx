@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { CircleIcon } from "../CircleIcon";
 
