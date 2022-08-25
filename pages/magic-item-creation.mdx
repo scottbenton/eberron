@@ -58,13 +58,13 @@ Rolling high enough causes the item to be finished quicker.
 Rolling lower causes the item to take longer to complete, or even causes item creation to fail.
 If the roll is especially bad, the components for the magic item may even be destroyed.
 
-| Roll vs DC                     | Result                                               |
-| ------------------------------ | ---------------------------------------------------- |
-| _roll_ <= (DC - 10)            | Item creation fails & components are destroyed       |
-| (DC - 10) < _roll_ <= (DC - 5) | Item creation fails, but components are ok           |
-| (DC - 5) <= _roll_ < DC        | Item creation succeeds, but takes longer than normal |
-| DC <= _roll_ < (DC + 5)        | Item creation succeeds in the normal time frame      |
-| (DC + 5) <= _roll_             | Item creation succeeds, taking less time than normal |
+| Roll vs DC                             | Result                                               |
+| -------------------------------------- | ---------------------------------------------------- |
+| _roll_ {'<='} (DC - 10)                | Item creation fails & components are destroyed       |
+| (DC - 10) {'<'} _roll_ {'<='} (DC - 5) | Item creation fails, but components are ok           |
+| (DC - 5) {'<='} _roll_ {'<'} DC        | Item creation succeeds, but takes longer than normal |
+| DC {'<='} _roll_ {'<'} (DC + 5)        | Item creation succeeds in the normal time frame      |
+| (DC + 5) {'<='} _roll_                 | Item creation succeeds, taking less time than normal |
 
 ## Schematics
 
